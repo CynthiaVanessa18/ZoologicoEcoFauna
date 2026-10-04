@@ -1,0 +1,1340 @@
+:root {
+  --verde-oscuro: #304734;
+  --verde: #5f7754;
+  --verde-suave: #91a27f;
+  --verde-claro: #e8efe2;
+  --cafe: #5b4634;
+  --arena: #d7c3a1;
+  --crema: #f7f3eb;
+  --blanco: #ffffff;
+  --texto: #434b43;
+  --texto-suave: #767e76;
+  --borde: #e3ddd2;
+  --rojo: #a94c4c;
+  --rojo-claro: #fae5e5;
+  --sombra: 0 18px 45px rgba(48, 71, 52, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--texto);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(145, 162, 127, 0.16),
+      transparent 35%
+    ),
+    var(--crema);
+}
+
+.navbar-vet {
+  padding: 14px 0;
+
+  background: linear-gradient(
+    90deg,
+    var(--arena) 0%,
+    var(--verde-suave) 55%,
+    var(--verde-oscuro) 100%
+  );
+
+  box-shadow: 0 8px 25px rgba(35, 53, 38, 0.24);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: var(--verde-oscuro) !important;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* Logo del veterinario */
+
+.logo-navbar-vet {
+  width: 68px;
+  height: 68px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.navbar-brand small {
+  display: block;
+  color: var(--cafe);
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #e4edda;
+  font-size: 1.2rem;
+}
+
+.usuario-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--blanco);
+}
+
+.usuario-info small,
+.usuario-info strong {
+  display: block;
+}
+
+.usuario-info small {
+  color: var(--blanco);
+  font-size: 0.68rem;
+}
+
+.usuario-info strong {
+  font-size: 0.9rem;
+}
+
+.usuario-avatar {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--arena);
+  color: var(--verde-oscuro);
+}
+
+.btn-salir {
+  padding: 9px 15px;
+  border: 1px solid var(--blanco);
+  color: var(--blanco);
+  background: transparent;
+  border-radius: 12px;
+  font-size: 0.84rem;
+}
+
+.btn-salir:hover {
+  border-color: var(--blanco);
+  background: var(--blanco);
+  color: var(--verde-oscuro);
+}
+
+.hero-vet {
+  padding: 58px 0 92px;
+
+  background: linear-gradient(
+    90deg,
+    var(--arena) 0%,
+    var(--verde-suave) 55%,
+    var(--verde-oscuro) 100%
+  );
+
+  color: var(--blanco);
+}
+
+.hero-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 14px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  font-size: 0.78rem;
+}
+
+.hero-vet h1 {
+  margin-bottom: 12px;
+
+  color: var(--cafe);
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.hero-vet p {
+  max-width: 700px;
+  margin: 0;
+
+  color: rgba(90, 68, 50, 0.88);
+
+  line-height: 1.8;
+}
+
+.hero-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 14px;
+  padding: 7px 12px;
+
+  border: 1px solid rgba(90, 68, 50, 0.2);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--cafe);
+
+  font-size: 0.78rem;
+}
+
+.contenido-principal {
+  position: relative;
+  z-index: 2;
+  margin-top: -48px;
+  padding-bottom: 50px;
+}
+
+.tarjeta-vet {
+  overflow: hidden;
+  margin-bottom: 28px;
+  border: 1px solid rgba(227, 221, 210, 0.95);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: var(--sombra);
+}
+
+.encabezado-tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--borde);
+  background: linear-gradient(180deg, #ffffff, rgba(247, 243, 235, 0.55));
+}
+
+.titulo-seccion {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icono-seccion {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+  font-size: 1.2rem;
+}
+
+.icono-horarios {
+  background: #f1e6d5;
+  color: var(--cafe);
+}
+
+.titulo-seccion small {
+  display: block;
+  color: var(--verde-suave);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.titulo-seccion h2 {
+  margin: 2px 0 0;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.65rem;
+}
+
+.estado-modulo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+  font-size: 0.77rem;
+  font-weight: 600;
+}
+
+.estado-modulo .bi-circle-fill {
+  color: #71915c;
+  font-size: 0.48rem;
+}
+
+.cuerpo-tarjeta {
+  padding: 28px;
+}
+
+.form-label {
+  margin-bottom: 9px;
+  color: var(--verde-oscuro);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.campo-con-icono {
+  position: relative;
+}
+
+.campo-con-icono > i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: var(--verde-suave);
+}
+
+.campo-con-icono .form-control,
+.campo-con-icono .form-select {
+  min-height: 52px;
+  padding-left: 44px;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  background-color: #fcfbf8;
+  color: var(--texto);
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--verde-suave);
+  box-shadow: 0 0 0 4px rgba(145, 162, 127, 0.15);
+}
+
+.textarea-instrucciones {
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  background: #fcfbf8;
+  resize: vertical;
+}
+
+.ayuda-campo {
+  display: block;
+  margin-top: 7px;
+  color: var(--texto-suave);
+  font-size: 0.73rem;
+}
+
+.btn-registrar {
+  min-height: 52px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+  color: var(--blanco);
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(48, 71, 52, 0.22);
+  transition: 0.25s;
+}
+
+.btn-registrar:hover {
+  transform: translateY(-2px);
+  color: var(--blanco);
+  box-shadow: 0 14px 28px rgba(48, 71, 52, 0.28);
+}
+
+.alerta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 18px 21px;
+  border: 1px solid;
+  border-radius: 17px;
+  box-shadow: var(--sombra);
+}
+
+.alerta-success {
+  border-color: #c8d9bd;
+  background: #edf5e8;
+  color: var(--verde-oscuro);
+}
+
+.alerta-danger {
+  border-color: #efcccc;
+  background: var(--rojo-claro);
+  color: var(--rojo);
+}
+
+.filtro-animal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filtro-animal label {
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.filtro-animal .form-select {
+  width: 220px;
+  min-height: 42px;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  background-color: #fcfbf8;
+}
+
+.cuerpo-tabla {
+  padding: 0;
+}
+
+.tabla-horarios {
+  vertical-align: middle;
+}
+
+.tabla-horarios thead th {
+  padding: 16px 18px;
+  border-bottom: none;
+  background: var(--verde-oscuro);
+  color: var(--blanco);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tabla-horarios tbody td {
+  padding: 17px 18px;
+  border-color: #eee8df;
+  color: var(--texto);
+  font-size: 0.87rem;
+}
+
+.tabla-horarios tbody tr:hover {
+  background: #faf8f2;
+}
+
+.animal-celda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.animal-icono {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: var(--verde-claro);
+  color: var(--verde);
+}
+
+.animal-celda strong,
+.animal-celda small {
+  display: block;
+}
+
+.animal-celda small {
+  color: var(--texto-suave);
+  font-size: 0.7rem;
+}
+
+.cantidad {
+  display: inline-flex;
+  min-width: 55px;
+  justify-content: center;
+  padding: 5px 9px;
+  border-radius: 9px;
+  background: #f3efe7;
+  font-weight: 600;
+}
+
+.badge-jornada {
+  display: inline-flex;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.instrucciones-celda {
+  max-width: 290px;
+  color: var(--texto-suave) !important;
+  line-height: 1.55;
+}
+
+.estado-vacio {
+  padding: 38px 20px;
+  text-align: center;
+}
+
+.estado-vacio i {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--verde-suave);
+  font-size: 2.2rem;
+}
+
+.estado-vacio h3 {
+  margin-bottom: 7px;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.35rem;
+}
+
+.estado-vacio p {
+  max-width: 560px;
+  margin: auto;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+.footer-vet {
+  padding: 24px 0;
+  border-top: 1px solid var(--borde);
+  background: #efeadd;
+}
+
+.footer-vet .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-vet span {
+  color: var(--verde-oscuro);
+  font-weight: 600;
+}
+
+.footer-vet small {
+  color: var(--texto-suave);
+}
+
+@media (max-width: 991px) {
+  .usuario-info div {
+    display: none;
+  }
+
+  .hero-vet {
+    padding: 44px 0 80px;
+  }
+
+  .encabezado-tarjeta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filtro-animal {
+    width: 100%;
+  }
+
+  .filtro-animal .form-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand small {
+    display: none;
+  }
+
+  .btn-salir {
+    padding: 9px 11px;
+    font-size: 0;
+  }
+
+  .btn-salir i {
+    font-size: 1rem;
+  }
+
+  .contenido-principal {
+    margin-top: -32px;
+  }
+
+  .tarjeta-vet {
+    border-radius: 18px;
+  }
+
+  .encabezado-tarjeta,
+  .cuerpo-tarjeta {
+    padding: 20px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 1.35rem;
+  }
+
+  .footer-vet .container {
+    flex-direction: column;
+  }
+}
+/* Modal de confirmación EcoFauna */
+
+.modal-confirmacion .modal-content {
+  overflow: hidden;
+
+  border: none;
+  border-radius: 24px;
+
+  background: var(--blanco);
+
+  box-shadow: 0 24px 60px rgba(48, 71, 52, 0.25);
+}
+
+.modal-confirmacion .modal-header {
+  padding: 20px 24px;
+
+  border: none;
+
+  background: linear-gradient(135deg, var(--arena), var(--verde-oscuro));
+
+  color: var(--blanco);
+}
+
+.modal-confirmacion .modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "DM Serif Display", serif;
+}
+
+.modal-confirmacion .modal-body {
+  padding: 26px 24px;
+
+  color: var(--texto);
+}
+
+.modal-confirmacion .modal-footer {
+  padding: 0 24px 24px;
+
+  border: none;
+}
+
+/* Ventana automática de éxito o error */
+
+.modal-resultado .modal-content {
+  overflow: hidden;
+  border: none;
+  border-radius: 24px;
+  background: var(--blanco);
+  box-shadow: 0 26px 70px rgba(48, 71, 52, 0.28);
+}
+
+.modal-resultado-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px;
+}
+
+.modal-resultado-cabecera.resultado-exitoso {
+  background: linear-gradient(135deg, var(--verde-suave), var(--verde-oscuro));
+  color: var(--blanco);
+}
+
+.modal-resultado-cabecera.resultado-error {
+  background: linear-gradient(135deg, #c66f68, #8e3d3d);
+  color: var(--blanco);
+}
+
+.modal-resultado-icono {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 1.55rem;
+}
+
+.modal-resultado-cabecera small,
+.modal-resultado-cabecera h5 {
+  display: block;
+  margin: 0;
+}
+
+.modal-resultado-cabecera small {
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.modal-resultado-cabecera h5 {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.45rem;
+}
+
+.modal-resultado-cuerpo {
+  padding: 26px 26px 10px;
+}
+
+.modal-resultado-cuerpo p {
+  margin: 0;
+  color: var(--texto);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.modal-resultado-pie {
+  padding: 18px 26px 26px;
+  border: none;
+}
+
+.btn-entendido {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 125px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: var(--verde-oscuro);
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.btn-entendido:hover,
+.btn-entendido:focus {
+  background: var(--verde);
+  color: var(--blanco);
+}
+
+/* ================================================================
+   MÓDULO DE SALUD, VACUNACIÓN Y ALERTAS
+   ================================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ancla-seccion,
+#resumen-medico {
+  scroll-margin-top: 24px;
+}
+
+.menu-modulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 22px;
+  padding: 12px;
+  border: 1px solid rgba(227, 221, 210, 0.95);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: var(--sombra);
+}
+
+.menu-modulos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: var(--verde-oscuro);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.menu-modulos a:hover {
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+  transform: translateY(-1px);
+}
+
+.resumen-medico {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.indicador-medico {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 132px;
+  padding: 20px;
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 28px rgba(48, 71, 52, 0.09);
+}
+
+.indicador-icono {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+.indicador-medico small,
+.indicador-medico strong,
+.indicador-medico span:not(.indicador-icono) {
+  display: block;
+}
+
+.indicador-medico small {
+  margin-bottom: 2px;
+  color: var(--texto-suave);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.indicador-medico strong {
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.indicador-medico span:not(.indicador-icono) {
+  margin-top: 4px;
+  color: var(--texto-suave);
+  font-size: 0.76rem;
+}
+
+.indicador-enfermedad .indicador-icono {
+  background: #f8e8e5;
+  color: #a85449;
+}
+
+.indicador-alergia .indicador-icono {
+  background: #fff1d7;
+  color: #a66919;
+}
+
+.indicador-vencida .indicador-icono {
+  background: var(--rojo-claro);
+  color: var(--rojo);
+}
+
+.indicador-proxima .indicador-icono {
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+}
+
+.icono-medico {
+  background: #f8e8e5;
+  color: #a85449;
+}
+
+.icono-historial {
+  background: #eee8f7;
+  color: #6b5686;
+}
+
+.icono-vacuna {
+  background: #e6f0f5;
+  color: #3f728a;
+}
+
+.icono-alerta-vacuna {
+  background: #fff1d7;
+  color: #a66919;
+}
+
+.subtarjeta-medica {
+  padding: 22px;
+  border: 1px solid var(--borde);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff, #fbfaf6);
+}
+
+.subtarjeta-titulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.subtarjeta-titulo > span {
+  width: 41px;
+  height: 41px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+}
+
+.subtarjeta-titulo small,
+.subtarjeta-titulo h3 {
+  display: block;
+  margin: 0;
+}
+
+.subtarjeta-titulo small {
+  color: var(--verde-suave);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.subtarjeta-titulo h3 {
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.28rem;
+}
+
+.texto-ayuda-medica {
+  margin-bottom: 20px;
+  color: var(--texto-suave);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.estado-vacio-compacto {
+  padding: 24px 16px;
+}
+
+.estado-vacio-compacto i {
+  font-size: 1.7rem;
+}
+
+.ayuda-alergia {
+  color: #9a6319;
+  font-weight: 600;
+}
+
+.tabla-medica,
+.tabla-vacunas {
+  min-width: 1060px;
+}
+
+.badge-condicion,
+.estado-clinico,
+.estado-vacuna {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+  padding: 6px 9px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.badge-condicion {
+  margin-bottom: 7px;
+}
+
+.badge-enfermedad {
+  background: #f8e8e5;
+  color: #9d4c43;
+}
+
+.badge-alergia {
+  background: #fff1d7;
+  color: #986116;
+}
+
+.condicion-nombre {
+  display: block;
+  color: var(--verde-oscuro);
+}
+
+.detalle-medico {
+  max-width: 320px;
+  color: var(--texto-suave) !important;
+  line-height: 1.5;
+}
+
+.detalle-medico > strong {
+  color: var(--texto);
+}
+
+.detalle-medico small {
+  display: block;
+  margin-top: 7px;
+}
+
+.estado-tratamiento,
+.estado-alergia,
+.vacuna-vencida {
+  background: var(--rojo-claro);
+  color: var(--rojo);
+}
+
+.estado-alergia,
+.vacuna-hoy,
+.vacuna-proxima {
+  background: #fff1d7;
+  color: #986116;
+}
+
+.estado-recuperado,
+.vacuna-programada {
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+}
+
+.vacuna-sin-fecha {
+  background: #eeeeea;
+  color: var(--texto-suave);
+}
+
+.estado-vacuna {
+  margin-top: 6px;
+}
+
+.borde-superior {
+  border-top: 1px solid var(--borde);
+}
+
+.rejilla-alertas-vacuna {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.alerta-vacuna-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 17px;
+  border: 1px solid var(--borde);
+  border-left-width: 5px;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.alerta-vacuna-icono {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.alerta-vacuna-card small,
+.alerta-vacuna-card h3,
+.alerta-vacuna-card strong,
+.alerta-vacuna-card span:not(.alerta-vacuna-icono) {
+  display: block;
+}
+
+.alerta-vacuna-card small {
+  color: var(--texto-suave);
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.alerta-vacuna-card h3 {
+  margin: 1px 0 5px;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.12rem;
+}
+
+.alerta-vacuna-card strong {
+  color: var(--texto);
+  font-size: 0.83rem;
+}
+
+.alerta-vacuna-card span:not(.alerta-vacuna-icono) {
+  margin-top: 3px;
+  color: var(--texto-suave);
+  font-size: 0.74rem;
+}
+
+.alerta-vencida {
+  border-left-color: var(--rojo);
+}
+
+.alerta-vencida .alerta-vacuna-icono {
+  background: var(--rojo-claro);
+  color: var(--rojo);
+}
+
+.alerta-hoy,
+.alerta-proxima {
+  border-left-color: #c48831;
+}
+
+.alerta-hoy .alerta-vacuna-icono,
+.alerta-proxima .alerta-vacuna-icono {
+  background: #fff1d7;
+  color: #986116;
+}
+
+.alerta-programada {
+  border-left-color: var(--verde-suave);
+}
+
+.alerta-programada .alerta-vacuna-icono {
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+}
+
+.historial-alertas {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--borde);
+}
+
+.historial-alertas > h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.15rem;
+}
+
+.tabla-alertas thead th {
+  padding: 11px 13px;
+  background: #f3efe7;
+  color: var(--verde-oscuro);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tabla-alertas tbody td {
+  padding: 12px 13px;
+  border-color: #eee8df;
+  color: var(--texto);
+  font-size: 0.78rem;
+  vertical-align: middle;
+}
+
+.sin-alertas-guardadas {
+  margin: 0;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f7f4ed;
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+}
+
+.modal-medico .form-control,
+.modal-medico .form-select {
+  min-height: 46px;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  background: #fcfbf8;
+}
+
+.resumen-modal-medico {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--verde-claro);
+}
+
+.resumen-modal-medico > span {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--verde-oscuro);
+}
+
+.resumen-modal-medico small,
+.resumen-modal-medico strong {
+  display: block;
+}
+
+.resumen-modal-medico small {
+  color: var(--texto-suave);
+  font-size: 0.68rem;
+}
+
+.resumen-modal-medico strong {
+  color: var(--verde-oscuro);
+}
+
+/* Ficha y formulario de alimentación */
+
+.ficha-animal-card {
+  border-color: var(--borde) !important;
+  border-radius: 16px !important;
+}
+
+.ficha-animal-resumen {
+  font-size: 0.8rem;
+}
+
+.ficha-animal-alergias {
+  font-size: 0.78rem;
+}
+
+.ficha-animal-alergias.alert-success,
+.historial-clinico-vacio {
+  border-color: #c8d9bd;
+}
+
+.ficha-animal-historial {
+  max-height: 180px;
+  padding-right: 5px;
+
+  overflow-y: auto;
+}
+
+.grupo-cantidad-recomendada {
+  min-height: 52px;
+}
+
+.unidad-medida-badge {
+  min-width: 52px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  justify-content: center;
+
+  border-color: var(--borde);
+  border-radius: 14px 0 0 14px;
+
+  background-color: #f3efe7;
+  color: var(--verde-oscuro);
+
+  font-size: 0.86rem;
+}
+
+.cantidad-recomendada-input {
+  border-color: var(--borde);
+  border-radius: 0 14px 14px 0;
+
+  background-color: #fcfbf8;
+
+  box-shadow: none;
+}
+
+.boton-dieta-bloqueado {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.historial-clinico-vacio {
+  font-size: 0.78rem;
+}
+
+.historial-clinico-registro {
+  border-color: var(--borde) !important;
+
+  font-size: 0.76rem;
+}
+
+@media (max-width: 1199px) {
+  .resumen-medico {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-modulos {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .menu-modulos a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .resumen-medico,
+  .rejilla-alertas-vacuna {
+    grid-template-columns: 1fr;
+  }
+
+  .indicador-medico {
+    min-height: 105px;
+  }
+
+  .subtarjeta-medica {
+    padding: 18px;
+  }
+}
+
+.usuario-info a,
+a.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 12px;
+    transition: all .25s ease;
+}
+
+.usuario-info a:hover,
+a.usuario-info:hover {
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    text-decoration: none;
+}
+
+.usuario-info a div,
+a.usuario-info div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.usuario-info a small,
+a.usuario-info small {
+    color: rgba(255,255,255,.75);
+    font-size: .75rem;
+}
+
+.usuario-info a strong,
+a.usuario-info strong {
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 600;
+}

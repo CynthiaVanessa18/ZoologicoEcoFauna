@@ -1,0 +1,112 @@
+/vendor/
+/config/local.php
+.env
+.env.*
+!.env.example
+*.log
+*.bak
+*.tmp
+/backups/
+/tests/manual/
+/storage/sesiones/*
+!/storage/sesiones/.gitkeep
+/docs/manuales/Manual_de_usuario_EcoFauna.docx
+/docs/manuales/Manual_de_usuario_EcoFauna_actualizado.docx
+/docs/manuales/Manual_de_usuario_EcoFauna_actualizado.pdf
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Conservar los recursos de demo actuales; excluir nuevas cargas.
+/storage/uploads/**
+!/storage/uploads/**/
+!/storage/uploads/habitat/2a738de214b9d2958a35c00d5b07d8cb.jpg
+!/storage/uploads/habitat/3efd0b88bd8e61bf7cf2ed4d7b3523ed.jpg
+!/storage/uploads/habitat/8b4b7ffd49d3416f11ceec51b7847d61.jpg
+!/storage/uploads/habitat/images (1).jpg
+!/storage/uploads/habitat/images.jpg
+!/storage/uploads/habitat/istockphoto-1131949134-612x612.jpg
+!/storage/uploads/habitat/OIP.webp
+!/storage/uploads/habitat/pexels-miami302-20782847.jpg
+!/storage/uploads/habitat/turtles_stock_by_things0fmagic_dea4xul-fullview.jpg
+!/storage/uploads/habitat/un-paisaje-natural-representa-muchos-animales-viviendo-juntos-en-su-hábitat-como-para-escena-de-la-sabana-africana-con-400149120.webp
+!/storage/uploads/habitat/zebras-walking-green-meadow-eating-260nw-2763668971.webp
+!/storage/uploads/habitats/449429.jpg
+!/storage/uploads/habitats/aviario_ex__tico_43052a5a23.webp
+!/storage/uploads/habitats/aviario_ex__tico_b29bef4aca.jpg
+!/storage/uploads/habitats/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand_1028938-192093.avif
+!/storage/uploads/habitats/bosque_5c47c0b1a8.jpg
+!/storage/uploads/habitats/bosque_tropical_5a64304f51.jpg
+!/storage/uploads/habitats/bosque_tropical_caf01db3e6.jpg
+!/storage/uploads/habitats/bosque_tropical_f3d346f333.jpg
+!/storage/uploads/habitats/bosque_tropical1_acdf20ce10.jpg
+!/storage/uploads/habitats/bosque_tropical2_c89aed89fe.jpg
+!/storage/uploads/habitats/cyn_fafeafda0e.webp
+!/storage/uploads/habitats/laguna_de_aves_7a65c27c25.jpg
+!/storage/uploads/habitats/laguna_de_aves_c046181ac9.jpg
+!/storage/uploads/habitats/OIP (1).webp
+!/storage/uploads/habitats/reptilario_26886e51bd.jpg
+!/storage/uploads/habitats/reptilario_8d1dc8aabd.jpg
+!/storage/uploads/habitats/reserva_de_herb__voros_3138054fe9.jpg
+!/storage/uploads/habitats/reserva_de_herb__voros_773142821c.webp
+!/storage/uploads/habitats/zona_de_grandes_felinos_3e40cbd77b.webp
+!/storage/uploads/habitats/zona_de_grandes_felinos_a62d63c823.jpg
+!/storage/uploads/imagenes zoologico/ChatGPT Image 31 jul 2026, 03_12_08 p.m..png
+!/storage/uploads/imagenes zoologico/ChatGPT Image 31 jul 2026, 03_13_05 p.m..png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_144502.png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_144648.png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_144748.png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_144933.png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_145045.png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_145227.png
+!/storage/uploads/imagenes zoologico/Copilot_20260731_145624.png
+!/storage/uploads/imagenes zoologico/fd6b429a-eedc-4620-bef3-11721fa9db74.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_17ogkn17ogkn17og.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_1u0f381u0f381u0f.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_3hktir3hktir3hkt.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_3k42ch3k42ch3k42.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_3vyf5g3vyf5g3vyf.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_4bxbrn4bxbrn4bxb.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_4paowb4paowb4pao.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_5b68xi5b68xi5b68.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_6lj7vo6lj7vo6lj7.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_6vfw186vfw186vfw.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_7t8v97t8v97t8v97.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_82qj9z82qj9z82qj.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_8p884x8p884x8p88.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_981n5h981n5h981n.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_9okuj59okuj59oku.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_bsxn8cbsxn8cbsxn.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_byobn6byobn6byob.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_cz45n9cz45n9cz45.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_eau7xeeau7xeeau7.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_f2e3utf2e3utf2e3.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_ggoowqggoowqggoo.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_gryqfngryqfngryq.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_hh28hehh28hehh28.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_hladpnhladpnhlad.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_i3h7x3i3h7x3i3h7.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_jzof6hjzof6hjzof.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_l8zrlel8zrlel8zr.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_lh1rz4lh1rz4lh1r.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_mog0admog0admog0.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_n1hcxin1hcxin1hc.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_nklbkinklbkinklb.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_op4ejrop4ejrop4e.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_ram09kram09kram0.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_rfgtfrfgtfrfgtfr.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_rh9gzrh9gzrh9gzr.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_rsal4prsal4prsal.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_shsll4shsll4shsl.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_t7tkact7tkact7tk.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_u04i57u04i57u04i.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_uf5l0fuf5l0fuf5l.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_uw67aauw67aauw67.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_vtwpy0vtwpy0vtwp.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_vupr7avupr7avupr.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_wogry9wogry9wogr.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_yizl0cyizl0cyizl.png
+!/storage/uploads/imagenes zoologico/Gemini_Generated_Image_yjuu4cyjuu4cyjuu.png
+!/storage/uploads/productos/fd6b429a-eedc-4620-bef3-11721fa9db74.png
+!/storage/uploads/productos/Gemini_Generated_Image_7t8v97t8v97t8v97.png

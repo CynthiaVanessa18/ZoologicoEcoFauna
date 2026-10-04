@@ -1,0 +1,292 @@
+/*PALETA DE COLORES*/
+:root{
+
+    --fondo:#F3F8F4;
+    --blanco:#FFFFFF;
+
+    --verde:#2D6A4F;
+    --verde-oscuro:#1B4332;
+    --verde-claro:#95D5B2;
+
+    --gris:#777777;
+    --gris-borde:#D9D9D9;
+
+}
+
+/*CONFIGURACIÓN GENERAL DE LA PÁGINA*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--fondo);
+}
+
+/*PANEL IZQUIERDO (IMAGEN DEL ZOOLÓGICO)*/
+
+.izquierda{
+
+    background-image:url("../img/zoo.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+
+}
+
+/* Capa verde transparente sobre la imagen */
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        rgba(27,67,50,.80),
+        rgba(45,106,79,.75)
+    );
+
+    color:var(--blanco);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:70px;
+
+}
+
+/* Título principal */
+
+.overlay h1{
+
+    font-family:"Fondamento", cursive;
+    font-size:60px;
+    font-weight:700;
+
+}
+
+/* Descripción */
+
+.overlay p{
+
+    margin-top:20px;
+    line-height:1.7;
+    font-size:18px;
+
+}
+
+/* Lista de opciones del lado izquierdo */
+
+.info{
+
+    margin-top:60px;
+
+}
+
+.info p{
+
+    font-size:19px;
+    margin-bottom:22px;
+
+}
+
+/* Iconos */
+
+.info i{
+
+    color:var(--verde-claro);
+    margin-right:12px;
+    font-size:22px;
+
+}
+
+/*TARJETA DEL LOGIN*/
+
+.login-card{
+
+    width:430px;
+
+    background:var(--blanco);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+/* Animación al pasar el mouse */
+
+.login-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Icono superior */
+
+.logo{
+
+    font-size:60px;
+    color:var(--verde);
+
+}
+
+/* Título "Bienvenido" */
+
+.login-card h2{
+
+    font-family:"PT Serif Caption", serif;
+
+    font-size:35px;
+    font-weight:700;
+
+    margin-top:15px;
+
+}
+
+/* Texto debajo del título */
+
+.login-card p{
+
+    color:var(--gris);
+
+    margin-bottom:30px;
+
+}
+
+/*CAMPOS DEL FORMULARIO*/
+
+/* Inputs */
+
+.form-control{
+
+    height:55px;
+
+    border:none;
+
+    box-shadow:none;
+
+}
+
+/* Cuando el usuario escribe */
+
+.form-control:focus{
+
+    box-shadow:none;
+
+}
+
+/* Contenedor del input y el icono */
+
+.input-group{
+
+    border:1px solid var(--gris-borde);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+/* Efecto cuando el input está seleccionado */
+
+.input-group:focus-within{
+
+    border-color:var(--verde);
+
+    box-shadow:0 0 10px rgba(45,106,79,.20);
+
+}
+
+/* Fondo del icono */
+
+.input-group-text{
+
+    background:var(--verde);
+
+    color:var(--blanco);
+
+    border:none;
+
+}
+
+/*BOTÓN DE LOGIN*/
+
+.btn-login{
+
+    background:var(--verde);
+
+    color:var(--blanco);
+
+    border:none;
+
+    height:55px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+/* Efecto al pasar el mouse */
+
+.btn-login:hover{
+
+    background:var(--verde-oscuro);
+
+    color:var(--blanco);
+
+    transform:scale(1.02);
+
+}
+
+/*CHECKBOX*/
+
+.form-check-input:checked{
+
+    background-color:var(--verde);
+
+    border-color:var(--verde);
+
+}
+
+/*RESPONSIVE*/
+
+/* Se aplica cuando la pantalla es menor a 991px */
+
+@media(max-width:991px){
+
+    /* Oculta la imagen en celulares */
+
+    .izquierda{
+
+        display:none;
+
+    }
+
+    /* Hace que el formulario ocupe casi toda la pantalla */
+
+    .login-card{
+
+        width:95%;
+
+        margin:20px;
+
+    }
+
+}

@@ -1,0 +1,1145 @@
+/* =====================================================
+   PALETA DE COLORES
+===================================================== */
+
+:root {
+  --verde-oscuro: #304734;
+  --verde: #607754;
+  --verde-suave: #91a27f;
+  --verde-claro: #e8efe2;
+
+  --cafe: #5a4432;
+  --arena: #d9c29b;
+  --arena-clara: #f0e4cf;
+  --crema: #f8f4ec;
+
+  --blanco: #ffffff;
+
+  --texto: #424a42;
+  --texto-suave: #747d74;
+  --borde: #e4ded3;
+
+  --sombra: 0 18px 45px rgba(48, 71, 52, 0.12);
+}
+
+/* Tienda y carrito */
+.product-card {
+  overflow: hidden;
+  border: 0;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.product-image,
+.no-image {
+  width: 100%;
+  height: 250px;
+}
+
+.product-image {
+  object-fit: cover;
+}
+
+.no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #198754;
+  background: #eaf7ef;
+  font-size: 80px;
+}
+
+.precio {
+  color: #198754;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.filtro,
+.carrito-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.filtro {
+  padding: 25px;
+}
+
+.carrito-card {
+  padding: 30px;
+}
+
+.tabla-carrito {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.producto-img,
+.sin-imagen {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.producto-img {
+  object-fit: cover;
+}
+
+.sin-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #198754;
+  background: #eaf7ef;
+  font-size: 30px;
+}
+
+.total-box {
+  padding: 20px;
+  background: #eaf7ef;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.btn-carrito {
+  padding: 12px 22px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+/* Administración de productos */
+.imagen-editar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.form-editar {
+  padding: 35px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-form {
+  color: #304734;
+  font-family: "DM Serif Display", serif;
+  font-size: 32px;
+}
+
+.producto-imagen {
+  display: block;
+  width: 70px !important;
+  max-width: 70px;
+  height: 70px !important;
+  max-height: 70px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+/* Incluye el padding y el borde en el tamaño del elemento */
+* {
+  box-sizing: border-box;
+}
+
+/* Desplazamiento suave cuando se utilizan enlaces internos */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales de la página */
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  color: var(--texto);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(145, 162, 127, 0.15),
+      transparent 34%
+    ),
+    var(--crema);
+}
+
+/* =====================================================
+   BARRA DE NAVEGACIÓN
+===================================================== */
+
+/* Contenedor principal del navbar */
+.navbar-cliente {
+  min-height: 96px;
+  padding: 10px 0;
+
+  overflow: hidden;
+
+  background: linear-gradient(135deg, var(--arena), #496246);
+
+  box-shadow: 0 8px 25px rgba(35, 53, 38, 0.24);
+}
+
+/* Marca o nombre de EcoFauna */
+.navbar-cliente .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: var(--blanco) !important;
+
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* Texto secundario debajo del nombre */
+.navbar-cliente .navbar-brand small {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+/* Logo de EcoFauna dentro del navbar */
+.navbar-cliente .logo-navbar-cliente {
+  display: block !important;
+
+  width: 72px !important;
+  height: 72px !important;
+
+  min-width: 72px;
+  max-width: 72px;
+
+  min-height: 72px;
+  max-height: 72px;
+
+  flex: 0 0 72px;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Zona derecha del navbar */
+.usuario-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Información del usuario */
+.usuario-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--blanco);
+}
+
+/* Permite colocar el texto en líneas separadas */
+.usuario-info small,
+.usuario-info strong {
+  display: block;
+}
+
+/* Texto pequeño del usuario */
+.usuario-info small {
+  color: rgba(255, 255, 255, 0.64);
+
+  font-size: 0.68rem;
+}
+
+/* Nombre del usuario */
+.usuario-info strong {
+  font-size: 0.9rem;
+}
+
+/* Círculo que contiene el icono del usuario */
+.usuario-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--arena);
+  color: var(--verde-oscuro);
+}
+
+/* Botón para cerrar sesión */
+.btn-salir {
+  padding: 9px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 12px;
+
+  color: var(--blanco);
+
+  font-size: 0.84rem;
+
+  transition:
+    background-color 0.25s,
+    border-color 0.25s,
+    color 0.25s;
+}
+
+/* Efecto del botón de salida */
+.btn-salir:hover {
+  border-color: var(--blanco);
+
+  background: var(--blanco);
+  color: var(--verde-oscuro);
+}
+
+/* =====================================================
+   ENCABEZADO PRINCIPAL
+===================================================== */
+
+/* Sección principal de bienvenida */
+.hero-cliente {
+  position: relative;
+  overflow: hidden;
+
+  padding: 65px 0 115px;
+
+  background: linear-gradient(
+    135deg,
+    var(--arena) 0%,
+    var(--verde-suave) 45%,
+    var(--verde-oscuro) 100%
+  );
+
+  color: var(--blanco);
+}
+
+/* Círculo decorativo del encabezado */
+.hero-cliente::before {
+  content: "";
+
+  position: absolute;
+  top: -120px;
+  right: -90px;
+
+  width: 380px;
+  height: 380px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+/* Distribución del texto y la ilustración */
+.hero-contenido {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(260px, 0.65fr);
+
+  align-items: center;
+  gap: 50px;
+}
+
+/* Etiqueta superior del encabezado */
+.hero-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 15px;
+  padding: 7px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.09);
+
+  font-size: 0.78rem;
+}
+
+/* Título principal */
+.hero-texto h1 {
+  margin-bottom: 15px;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+}
+
+/* Descripción del encabezado */
+.hero-texto p {
+  max-width: 690px;
+
+  margin-bottom: 26px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  line-height: 1.8;
+}
+
+/* Contenedor de los botones principales */
+.hero-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* =====================================================
+   BOTONES DEL ENCABEZADO
+===================================================== */
+
+/* Configuración compartida por ambos botones */
+.btn-principal,
+.btn-secundario {
+  min-height: 50px;
+  padding: 0 19px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.25s,
+    border-color 0.25s,
+    color 0.25s,
+    transform 0.25s;
+}
+
+/* Botón principal */
+.btn-principal {
+  border: none;
+
+  background: var(--arena);
+  color: var(--verde-oscuro);
+}
+
+/* Efecto del botón principal */
+.btn-principal:hover {
+  background: #e5cfaa;
+  color: var(--verde-oscuro);
+
+  transform: translateY(-1px);
+}
+
+/* Botón secundario */
+.btn-secundario {
+  border: 1px solid rgba(255, 255, 255, 0.32);
+
+  color: var(--blanco);
+}
+
+/* Efecto del botón secundario */
+.btn-secundario:hover {
+  border-color: var(--blanco);
+
+  background: var(--blanco);
+  color: var(--verde-oscuro);
+
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   ILUSTRACIÓN DEL ENCABEZADO
+===================================================== */
+
+/* Área que contiene los elementos decorativos */
+.hero-ilustracion {
+  position: relative;
+
+  min-height: 290px;
+}
+
+/* Círculo principal de la ilustración */
+.circulo-grande {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 230px;
+  height: 230px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  color: #dfe9d5;
+
+  font-size: 5.2rem;
+}
+
+/* Elementos decorativos pequeños */
+.burbuja {
+  position: absolute;
+
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--blanco);
+
+  font-size: 1.3rem;
+}
+
+/* Posición de cada burbuja */
+.burbuja-uno {
+  top: 12px;
+  left: 18px;
+}
+
+.burbuja-dos {
+  right: 8px;
+  bottom: 32px;
+}
+
+.burbuja-tres {
+  top: 32px;
+  right: 28px;
+}
+
+/* =====================================================
+   CONTENIDO PRINCIPAL
+===================================================== */
+
+/* Superpone el contenido ligeramente sobre el encabezado */
+.contenido-principal {
+  position: relative;
+  z-index: 3;
+
+  margin-top: -58px;
+  padding-bottom: 50px;
+}
+
+/* =====================================================
+   TARJETAS DE RESUMEN
+===================================================== */
+
+/* Distribución de las tarjetas superiores */
+.resumen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+
+  margin-bottom: 24px;
+}
+
+/* Tarjeta individual de resumen */
+.tarjeta-resumen {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 22px;
+
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  box-shadow: var(--sombra);
+}
+
+/* Icono de la tarjeta */
+.resumen-icono {
+  width: 50px;
+  height: 50px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 15px;
+
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+
+  font-size: 1.2rem;
+}
+
+/* Coloca los textos en líneas diferentes */
+.tarjeta-resumen small,
+.tarjeta-resumen strong {
+  display: block;
+}
+
+/* Descripción pequeña */
+.tarjeta-resumen small {
+  margin-bottom: 3px;
+
+  color: var(--texto-suave);
+
+  font-size: 0.76rem;
+}
+
+/* Valor destacado */
+.tarjeta-resumen strong {
+  color: var(--verde-oscuro);
+
+  font-size: 1.05rem;
+}
+
+/* =====================================================
+   AVISO DE CUENTA
+===================================================== */
+
+.aviso-cuenta {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+
+  margin-bottom: 30px;
+  padding: 18px 20px;
+
+  border: 1px solid #d9ccb5;
+  border-radius: 17px;
+
+  background: #f4ead8;
+  color: var(--cafe);
+}
+
+.aviso-cuenta p {
+  margin: 0;
+
+  font-size: 0.86rem;
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   SECCIONES PRINCIPALES
+===================================================== */
+
+/* Contenedores de servicios e información */
+.seccion-servicios,
+.seccion-informacion {
+  margin-bottom: 30px;
+  padding: 30px;
+
+  border: 1px solid var(--borde);
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: var(--sombra);
+}
+
+/* Encabezado de cada sección */
+.encabezado-seccion {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-bottom: 25px;
+}
+
+/* Etiquetas pequeñas sobre los títulos */
+.encabezado-seccion span,
+.mini-titulo {
+  display: block;
+
+  color: var(--verde-suave);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Títulos principales de las secciones */
+.encabezado-seccion h2,
+.informacion-principal h2 {
+  margin: 3px 0 0;
+
+  color: var(--verde-oscuro);
+
+  font-family: "DM Serif Display", serif;
+  font-size: 1.8rem;
+}
+
+/* Descripción del encabezado */
+.encabezado-seccion p {
+  max-width: 470px;
+  margin: 0;
+
+  color: var(--texto-suave);
+
+  font-size: 0.88rem;
+
+  line-height: 1.65;
+}
+
+/* =====================================================
+   SERVICIOS
+===================================================== */
+
+/* Distribución de las tarjetas de servicio */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Tarjeta individual de servicio */
+.tarjeta-servicio {
+  min-height: 250px;
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid var(--borde);
+  border-radius: 18px;
+
+  background: #fcfbf8;
+
+  transition:
+    transform 0.25s,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+/* Efecto al pasar el cursor */
+.tarjeta-servicio:hover {
+  transform: translateY(-4px);
+
+  border-color: #cbd6c2;
+
+  box-shadow: 0 14px 30px rgba(48, 71, 52, 0.1);
+}
+
+/* Icono de cada servicio */
+.servicio-icono {
+  width: 48px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  border-radius: 15px;
+
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+
+  font-size: 1.2rem;
+}
+
+/* Título del servicio */
+.tarjeta-servicio h3 {
+  margin-bottom: 10px;
+
+  color: var(--verde-oscuro);
+
+  font-family: "DM Serif Display", serif;
+  font-size: 1.3rem;
+}
+
+/* Descripción del servicio */
+.tarjeta-servicio p {
+  margin-bottom: 18px;
+
+  color: var(--texto-suave);
+
+  font-size: 0.86rem;
+
+  line-height: 1.65;
+}
+
+/* Etiqueta para funciones aún no disponibles */
+.estado-proximamente {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  align-self: flex-start;
+
+  margin-top: auto;
+  padding: 7px 10px;
+
+  border-radius: 999px;
+
+  background: var(--arena-clara);
+  color: var(--cafe);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* =====================================================
+   INFORMACIÓN PARA EL VISITANTE
+===================================================== */
+
+/* Introducción de la sección informativa */
+.informacion-principal {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+
+  margin-bottom: 26px;
+}
+
+/* Texto de introducción */
+.informacion-principal p {
+  max-width: 760px;
+
+  margin: 10px 0 0;
+
+  color: var(--texto-suave);
+
+  line-height: 1.7;
+}
+
+/* Icono de la sección informativa */
+.informacion-icono {
+  width: 54px;
+  height: 54px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 17px;
+
+  background: var(--arena-clara);
+  color: var(--cafe);
+
+  font-size: 1.3rem;
+}
+
+/* =====================================================
+   CONSEJOS
+===================================================== */
+
+/* Distribución de los consejos */
+.consejos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* Consejo individual */
+.consejo {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+
+  padding: 17px;
+
+  border-radius: 15px;
+
+  background: var(--verde-claro);
+}
+
+/* Icono del consejo */
+.consejo > i {
+  margin-top: 2px;
+
+  color: var(--verde);
+
+  font-size: 1.05rem;
+}
+
+/* Título del consejo */
+.consejo strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: var(--verde-oscuro);
+
+  font-size: 0.82rem;
+}
+
+/* Descripción del consejo */
+.consejo span {
+  color: var(--texto-suave);
+
+  font-size: 0.76rem;
+
+  line-height: 1.5;
+}
+
+/* =====================================================
+   PIE DE PÁGINA
+===================================================== */
+
+.footer-cliente {
+  padding: 24px 0;
+
+  border-top: 1px solid var(--borde);
+
+  background: #efeadd;
+}
+
+/* Distribución interna del pie de página */
+.footer-cliente .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Nombre de EcoFauna */
+.footer-cliente span {
+  color: var(--verde-oscuro);
+
+  font-weight: 600;
+}
+
+/* Texto secundario del pie */
+.footer-cliente small {
+  color: var(--texto-suave);
+}
+
+/* =====================================================
+   DISEÑO RESPONSIVE
+===================================================== */
+
+/* Tabletas y pantallas medianas */
+@media (max-width: 1100px) {
+  .servicios-grid,
+  .consejos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tabletas pequeñas */
+@media (max-width: 900px) {
+  .hero-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-ilustracion {
+    display: none;
+  }
+
+  .resumen-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado-seccion {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Teléfonos */
+@media (max-width: 767px) {
+  .navbar-cliente .logo-navbar-cliente {
+    width: 52px !important;
+    height: 52px !important;
+
+    min-width: 52px;
+    max-width: 52px;
+
+    min-height: 52px;
+    max-height: 52px;
+
+    flex-basis: 52px;
+  }
+
+  .navbar-cliente .navbar-brand small,
+  .usuario-info div {
+    display: none;
+  }
+
+  .btn-salir {
+    padding: 9px 11px;
+    font-size: 0;
+  }
+
+  .btn-salir i {
+    font-size: 1rem;
+  }
+
+  .hero-cliente {
+    padding: 48px 0 90px;
+  }
+
+  .contenido-principal {
+    margin-top: -38px;
+  }
+
+  .seccion-servicios,
+  .seccion-informacion {
+    padding: 22px;
+    border-radius: 19px;
+  }
+
+  .servicios-grid,
+  .consejos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .informacion-principal,
+  .footer-cliente .container {
+    flex-direction: column;
+  }
+}
+/* Modal de mensajes del control de acceso */
+
+.modal-ecofauna .modal-content {
+  overflow: hidden;
+
+  border: none;
+  border-radius: 24px;
+
+  background: var(--blanco);
+
+  box-shadow: 0 24px 60px rgba(48, 71, 52, 0.24);
+}
+
+.modal-ecofauna .modal-header {
+  padding: 20px 24px;
+
+  border: none;
+
+  background: linear-gradient(135deg, var(--arena), var(--verde-oscuro));
+
+  color: var(--blanco);
+}
+
+.modal-ecofauna .modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "DM Serif Display", serif;
+  font-size: 1.35rem;
+}
+
+.modal-ecofauna .modal-body {
+  padding: 27px 24px;
+
+  color: var(--texto);
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.modal-ecofauna .modal-footer {
+  padding: 0 24px 24px;
+
+  border: none;
+}
+/* Botón para limpiar filtros */
+
+.btn-limpiar-acceso {
+  min-height: 50px;
+  padding: 0 19px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  border: 1px solid var(--verde-suave);
+  border-radius: 14px;
+
+  background: var(--verde-claro);
+  color: var(--verde-oscuro);
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.25s,
+    border-color 0.25s,
+    color 0.25s,
+    transform 0.25s;
+}
+
+.btn-limpiar-acceso:hover {
+  border-color: var(--verde);
+  background: var(--verde);
+  color: var(--blanco);
+
+  transform: translateY(-1px);
+}
+
+/* Componentes de compra y entradas */
+
+.selector-cantidad-entrada {
+  width: 140px;
+}
+
+.resumen-compra-entradas {
+  top: 20px;
+
+  border-top: 4px solid var(--verde-oscuro) !important;
+}
+
+.icono-sin-entradas {
+  font-size: 3rem;
+}
+
+.codigo-ingreso-entrada {
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+}
+
+.contador-carrito {
+  font-size: 0.75rem;
+}
+
+.hero-etiqueta-error {
+  background: rgb(255 100 100 / 20%);
+  color: var(--blanco);
+}
+
+.tarjeta-resultado-compra {
+  border-radius: 20px;
+}
+
+.alerta-resultado-compra {
+  border-radius: 16px;
+}
+
+.imagen-producto-compra {
+  object-fit: cover;
+}

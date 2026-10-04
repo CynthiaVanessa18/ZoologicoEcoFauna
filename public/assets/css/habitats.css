@@ -1,0 +1,770 @@
+:root {
+  --verde-oscuro: #304734;
+  --verde: #607754;
+  --verde-suave: #91a27f;
+  --verde-claro: #e8efe2;
+  --cafe: #5a4432;
+  --arena: #d9c29b;
+  --arena-clara: #f0e4cf;
+  --crema: #f8f4ec;
+  --blanco: #ffffff;
+  --texto: #424a42;
+  --texto-suave: #747d74;
+  --borde: #e4ded3;
+  --rojo: #a94848;
+  --rojo-claro: #f9e8e6;
+  --sombra: 0 18px 45px rgba(61, 72, 54, 0.12);
+}
+
+/* Administración */
+
+.hero-habitats-admin {
+  background:
+    linear-gradient(120deg, rgba(48, 71, 52, 0.98), rgba(96, 119, 84, 0.9)),
+    radial-gradient(circle at 80% 20%, rgba(217, 194, 155, 0.32), transparent 32%);
+}
+
+.alerta-admin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 14px 17px;
+  border: 1px solid;
+  border-radius: 15px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.alerta-exito {
+  color: #416039;
+  border-color: #bdd2b5;
+  background: #edf6e9;
+}
+
+.alerta-error {
+  color: var(--rojo);
+  border-color: #e7bfba;
+  background: var(--rojo-claro);
+}
+
+.formulario-habitat-card {
+  margin-bottom: 24px;
+}
+
+.formulario-habitat-grid textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.encabezado-lista-habitats {
+  min-height: 84px;
+}
+
+.filtros-habitats-admin {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(170px, 0.25fr) auto auto;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.campo-busqueda-habitat {
+  position: relative;
+}
+
+.campo-busqueda-habitat i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: var(--texto-suave);
+  transform: translateY(-50%);
+}
+
+.campo-busqueda-habitat input,
+.filtros-habitats-admin .form-select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  color: var(--texto);
+  background: var(--blanco);
+}
+
+.campo-busqueda-habitat input {
+  padding: 10px 14px 10px 42px;
+}
+
+.habitat-tabla-nombre {
+  min-width: 280px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.habitat-tabla-nombre > span {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 13px;
+  color: var(--verde-oscuro);
+  background: var(--verde-claro);
+  font-size: 1.05rem;
+}
+
+.habitat-tabla-nombre strong,
+.habitat-tabla-nombre small {
+  display: block;
+}
+
+.habitat-tabla-nombre strong {
+  color: var(--verde-oscuro);
+}
+
+.habitat-tabla-nombre small {
+  max-width: 360px;
+  margin-top: 4px;
+  color: var(--texto-suave);
+  line-height: 1.45;
+}
+
+.btn-tabla.ocultar {
+  color: var(--rojo);
+}
+
+.btn-tabla.activar {
+  color: var(--verde);
+}
+
+/* Portal del cliente */
+
+.pagina-habitats {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--texto);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(217, 194, 155, 0.25), transparent 28%),
+    linear-gradient(180deg, #faf8f2 0%, var(--crema) 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.pagina-habitats *,
+.pagina-habitats *::before,
+.pagina-habitats *::after {
+  box-sizing: border-box;
+}
+
+.pagina-habitats a {
+  text-decoration: none;
+}
+
+.navbar-habitats {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid rgba(228, 222, 211, 0.8);
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 8px 28px rgba(48, 71, 52, 0.07);
+}
+
+.barra-habitats {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.marca-habitats,
+.usuario-habitats,
+.nombre-cliente-habitats {
+  display: flex;
+  align-items: center;
+}
+
+.marca-habitats {
+  gap: 12px;
+  color: var(--verde-oscuro);
+}
+
+.marca-habitats:hover {
+  color: var(--verde-oscuro);
+}
+
+.marca-habitats img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+
+.marca-habitats strong,
+.marca-habitats small,
+.nombre-cliente-habitats small,
+.nombre-cliente-habitats strong {
+  display: block;
+}
+
+.marca-habitats strong {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.marca-habitats small,
+.nombre-cliente-habitats small {
+  margin-top: 4px;
+  color: var(--texto-suave);
+  font-size: 0.7rem;
+}
+
+.usuario-habitats {
+  gap: 10px;
+}
+
+.usuario-habitats form {
+  margin: 0;
+}
+
+.nombre-cliente-habitats {
+  gap: 9px;
+  margin-right: 6px;
+}
+
+.nombre-cliente-habitats > i {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--verde-oscuro);
+  background: var(--verde-claro);
+}
+
+.nombre-cliente-habitats strong {
+  max-width: 150px;
+  overflow: hidden;
+  color: var(--verde-oscuro);
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-volver-habitats,
+.btn-salir-habitats,
+.btn-filtrar-habitats,
+.btn-limpiar-habitats {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn-volver-habitats,
+.btn-limpiar-habitats {
+  border: 1px solid var(--borde);
+  color: var(--cafe);
+  background: var(--blanco);
+}
+
+.btn-salir-habitats,
+.btn-filtrar-habitats {
+  border: 0;
+  color: var(--blanco);
+  background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+}
+
+.btn-volver-habitats:hover,
+.btn-limpiar-habitats:hover,
+.btn-salir-habitats:hover,
+.btn-filtrar-habitats:hover {
+  transform: translateY(-2px);
+}
+
+.hero-habitats {
+  overflow: hidden;
+  padding: 66px 0 108px;
+  color: var(--blanco);
+  background:
+    radial-gradient(circle at 80% 25%, rgba(217, 194, 155, 0.22), transparent 28%),
+    linear-gradient(120deg, var(--verde-oscuro), var(--verde));
+}
+
+.hero-habitats-contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+  align-items: center;
+  gap: 60px;
+}
+
+.etiqueta-habitats {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.hero-habitats h1 {
+  margin: 17px 0 10px;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+}
+
+.hero-habitats p {
+  max-width: 710px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.8;
+}
+
+.ilustracion-habitats {
+  position: relative;
+  min-height: 250px;
+}
+
+.planeta-habitats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  color: #dfe9d5;
+  background: rgba(255, 255, 255, 0.09);
+  font-size: 4.7rem;
+  transform: translate(-50%, -50%);
+}
+
+.mini-habitat {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.mini-habitat-uno { top: 12px; left: 15%; }
+.mini-habitat-dos { right: 8%; bottom: 25px; }
+.mini-habitat-tres { left: 8%; bottom: 18px; }
+
+.contenido-habitats {
+  position: relative;
+  z-index: 2;
+  margin-top: -55px;
+  padding-bottom: 62px;
+}
+
+.resumen-habitats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 23px;
+}
+
+.resumen-habitats article {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 21px;
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--sombra);
+}
+
+.resumen-habitats article > i {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: var(--verde-oscuro);
+  background: var(--verde-claro);
+  font-size: 1.15rem;
+}
+
+.resumen-habitats small,
+.resumen-habitats strong {
+  display: block;
+}
+
+.resumen-habitats small {
+  color: var(--texto-suave);
+  font-size: 0.7rem;
+}
+
+.resumen-habitats strong {
+  color: var(--verde-oscuro);
+  font-size: 1.3rem;
+}
+
+.panel-filtros-habitats {
+  margin-bottom: 22px;
+  padding: 23px;
+  border: 1px solid var(--borde);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: var(--sombra);
+}
+
+.titulo-listado-habitats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.titulo-listado-habitats > span {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: var(--verde-oscuro);
+  background: var(--verde-claro);
+}
+
+.titulo-listado-habitats small {
+  color: var(--verde-suave);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.titulo-listado-habitats h2 {
+  margin: 2px 0 0;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.55rem;
+}
+
+.filtros-habitats {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(190px, 0.28fr) auto auto;
+  gap: 11px;
+}
+
+.busqueda-habitats {
+  position: relative;
+}
+
+.busqueda-habitats i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: var(--texto-suave);
+  transform: translateY(-50%);
+}
+
+.busqueda-habitats input,
+.filtros-habitats select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  color: var(--texto);
+  background: var(--blanco);
+}
+
+.busqueda-habitats input {
+  padding: 10px 14px 10px 42px;
+}
+
+.filtros-habitats select {
+  padding: 10px 13px;
+}
+
+.grid-habitats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-habitat-cliente {
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--sombra);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-habitat-cliente:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 55px rgba(61, 72, 54, 0.16);
+}
+
+.cabecera-habitat-cliente {
+  min-height: 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(217, 194, 155, 0.32), transparent 30%),
+    linear-gradient(135deg, #3d5941, #78906a);
+}
+
+.icono-habitat-cliente {
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.13);
+  font-size: 1.55rem;
+}
+
+.zona-habitat-cliente {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.13);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.cuerpo-habitat-cliente {
+  padding: 24px;
+}
+
+.cuerpo-habitat-cliente h2 {
+  margin: 0 0 8px;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.7rem;
+}
+
+.cuerpo-habitat-cliente > p {
+  min-height: 69px;
+  margin: 0 0 19px;
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.detalles-habitat-cliente {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+  margin-bottom: 12px;
+}
+
+.detalles-habitat-cliente > div,
+.animales-habitat-cliente {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px;
+  border-radius: 14px;
+  background: #f7f5ef;
+}
+
+.detalles-habitat-cliente i,
+.animales-habitat-cliente i {
+  color: var(--verde);
+}
+
+.detalles-habitat-cliente small,
+.detalles-habitat-cliente strong,
+.animales-habitat-cliente small,
+.animales-habitat-cliente strong {
+  display: block;
+}
+
+.detalles-habitat-cliente small,
+.animales-habitat-cliente small {
+  margin-bottom: 3px;
+  color: var(--texto-suave);
+  font-size: 0.63rem;
+}
+
+.detalles-habitat-cliente strong,
+.animales-habitat-cliente strong {
+  color: var(--verde-oscuro);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.animales-habitat-cliente {
+  background: var(--verde-claro);
+}
+
+.vacio-habitats {
+  grid-column: 1 / -1;
+  padding: 55px 25px;
+  border: 1px dashed var(--borde);
+  border-radius: 22px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.vacio-habitats > i {
+  color: var(--verde-suave);
+  font-size: 2.4rem;
+}
+
+.vacio-habitats h2 {
+  margin: 10px 0 5px;
+  color: var(--verde-oscuro);
+  font-family: "DM Serif Display", serif;
+}
+
+.vacio-habitats p {
+  color: var(--texto-suave);
+}
+
+.vacio-habitats a {
+  color: var(--verde);
+  font-weight: 600;
+}
+
+.recomendacion-habitats {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #dbc9aa;
+  border-radius: 22px;
+  background: var(--arena-clara);
+}
+
+.recomendacion-habitats > i {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  color: var(--cafe);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.recomendacion-habitats small {
+  color: var(--cafe);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recomendacion-habitats h2 {
+  margin: 2px 0 4px;
+  color: var(--cafe);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.45rem;
+}
+
+.recomendacion-habitats p {
+  margin: 0;
+  color: #6d5a47;
+  font-size: 0.78rem;
+}
+
+.footer-habitats {
+  padding: 24px 0;
+  color: rgba(255, 255, 255, 0.78);
+  background: var(--verde-oscuro);
+}
+
+.footer-habitats .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-habitats span {
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.footer-habitats small {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 992px) {
+  .hero-habitats-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .ilustracion-habitats {
+    display: none;
+  }
+
+  .filtros-habitats-admin,
+  .filtros-habitats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .formulario-habitat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .barra-habitats,
+  .usuario-habitats,
+  .footer-habitats .container {
+    flex-wrap: wrap;
+  }
+
+  .nombre-cliente-habitats {
+    display: none;
+  }
+
+  .resumen-habitats,
+  .grid-habitats,
+  .resumen-admin-grid,
+  .filtros-habitats-admin,
+  .filtros-habitats,
+  .formulario-habitat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campo-doble,
+  .campo-completo {
+    grid-column: auto;
+  }
+
+  .detalles-habitat-cliente {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-salir-habitats span {
+    display: none;
+  }
+}
+

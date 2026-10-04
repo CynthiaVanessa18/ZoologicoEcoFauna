@@ -1,0 +1,10 @@
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+# El código, la configuración y los documentos nunca se sirven directamente.
+RewriteRule ^(?:app|config|database|docs|scripts|storage|tests|vendor)(?:/|$) - [F,END,NC]
+RewriteRule (^|/)\. - [F,END]
+RewriteRule ^(?:composer\.(?:json|lock)|README\.md)$ - [F,END,NC]
+RewriteRule ^index\.php$ - [END]
+RewriteRule ^public(?:/|$) - [L]
+RewriteRule ^ index.php [END]

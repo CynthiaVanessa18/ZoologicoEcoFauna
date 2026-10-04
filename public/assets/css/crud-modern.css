@@ -1,0 +1,178 @@
+/* Capa visual compartida para las pantallas de gestión de EcoFauna.
+   No modifica el comportamiento ni la estructura funcional de los formularios. */
+:root {
+  --crud-sidebar: #123f2d;
+  --crud-sidebar-deep: #0d3022;
+  --crud-green: #247a36;
+  --crud-green-dark: #176128;
+  --crud-green-soft: #eaf5e8;
+  --crud-bg: #f5f7f8;
+  --crud-surface: #ffffff;
+  --crud-text: #18201c;
+  --crud-muted: #68716c;
+  --crud-border: #dfe5e1;
+  --crud-danger: #b73e3e;
+  --crud-shadow: 0 8px 26px rgba(24, 48, 34, .07);
+}
+
+body.crud-modern {
+  min-height: 100vh;
+  color: var(--crud-text);
+  background: linear-gradient(135deg, #f8fafb 0%, var(--crud-bg) 55%, #f1f5f2 100%);
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+body.crud-modern::before {
+  content: "";
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: -1;
+  width: 7px;
+  background: linear-gradient(180deg, var(--crud-sidebar), var(--crud-sidebar-deep));
+}
+
+/* Barras superiores: blancas, sobrias y compactas como la referencia. */
+.crud-modern :is(.navbar-admin-modulo, .navbar-admin, .navbar-cliente, .navbar-empleado, .navbar-vet) {
+  min-height: 72px;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid var(--crud-border);
+  background: rgba(255, 255, 255, .96) !important;
+  box-shadow: 0 2px 12px rgba(20, 48, 31, .05);
+  backdrop-filter: blur(12px);
+}
+
+.crud-modern :is(.navbar-brand, .marca-admin-modulo) { color: var(--crud-sidebar) !important; }
+.crud-modern :is(.navbar-brand, .marca-admin-modulo) small { color: var(--crud-muted) !important; }
+.crud-modern :is(.usuario-info, .navbar-usuario, .usuario-nav) { color: var(--crud-text) !important; }
+.crud-modern :is(.usuario-info, .navbar-usuario) small { color: var(--crud-muted) !important; }
+.crud-modern :is(.usuario-avatar, .avatar-usuario) {
+  color: var(--crud-sidebar) !important;
+  background: #fff !important;
+  border: 1px solid var(--crud-border);
+}
+.crud-modern :is(.logo-navbar-admin, .logo-navbar-cliente, .logo-navbar-empleado) {
+  width: 54px;
+  height: 54px;
+}
+
+/* El encabezado pasa de bloque decorativo grande a título de trabajo. */
+.crud-modern :is(.hero-modulo-admin, .hero-admin, .hero-cliente, .hero-empleado, .hero-vet) {
+  padding: 34px 0 78px;
+  color: var(--crud-text) !important;
+  background: transparent !important;
+}
+.crud-modern :is(.hero-modulo-admin, .hero-admin, .hero-cliente, .hero-empleado, .hero-vet) h1 {
+  margin: 0 0 6px;
+  color: var(--crud-text) !important;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 700;
+}
+.crud-modern :is(.hero-modulo-admin, .hero-admin, .hero-cliente, .hero-empleado, .hero-vet) p {
+  color: var(--crud-muted) !important;
+  line-height: 1.55;
+}
+.crud-modern :is(.hero-etiqueta, .etiqueta-modulo) {
+  margin-bottom: 12px;
+  color: var(--crud-green-dark) !important;
+  background: var(--crud-green-soft) !important;
+  border: 1px solid #cfe5cd !important;
+}
+.crud-modern :is(.hero-ilustracion, .hero-imagen) { opacity: .16; filter: saturate(.6); }
+.crud-modern :is(.contenido-principal, .contenido-modulo-admin) { margin-top: -48px; }
+
+/* Superficies */
+.crud-modern :is(.tarjeta-modulo-admin, .tarjeta, .tarjeta-servicio, .card, .panel, .formulario-card, .tabla-card) {
+  border: 1px solid var(--crud-border) !important;
+  border-radius: 12px !important;
+  background: var(--crud-surface) !important;
+  box-shadow: var(--crud-shadow) !important;
+}
+.crud-modern :is(.encabezado-tarjeta-modulo, .card-header, .tarjeta-encabezado, .panel-heading) {
+  padding: 20px 22px;
+  color: var(--crud-text) !important;
+  background: #fff !important;
+  border-bottom: 1px solid var(--crud-border) !important;
+}
+.crud-modern :is(.card-body, .cuerpo-tarjeta, .formulario-contenido) { padding: 22px; }
+.crud-modern :is(.resumen-admin-grid article, .tarjeta-resumen, .resumen-item) {
+  border: 1px solid var(--crud-border) !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+  box-shadow: var(--crud-shadow) !important;
+}
+
+/* Formularios */
+.crud-modern :is(label, .form-label) { color: #303934; font-weight: 500; }
+.crud-modern :is(.form-control, .form-select, input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]), select, textarea) {
+  min-height: 46px;
+  border: 1px solid var(--crud-border);
+  border-radius: 8px;
+  color: var(--crud-text);
+  background-color: #fff;
+  box-shadow: none;
+}
+.crud-modern textarea { min-height: 112px; }
+.crud-modern :is(.form-control, .form-select, input, select, textarea):focus {
+  border-color: #6da778;
+  box-shadow: 0 0 0 3px rgba(36, 122, 54, .12);
+  outline: 0;
+}
+.crud-modern .form-check-input:checked { border-color: var(--crud-green); background-color: var(--crud-green); }
+
+/* Acciones */
+.crud-modern :is(.btn-principal, .btn-guardar-admin, .guardar, .btn-success, .btn-primary) {
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--crud-green), var(--crud-green-dark)) !important;
+  border-color: var(--crud-green) !important;
+}
+.crud-modern :is(.btn, .boton, .btn-volver-admin, .btn-secundario-admin, .btn-cancelar-admin) {
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: none;
+}
+.crud-modern :is(.btn-principal, .btn-guardar-admin, .guardar, .btn-success, .btn-primary):hover {
+  transform: translateY(-1px);
+  background: var(--crud-green-dark) !important;
+  box-shadow: 0 7px 16px rgba(23, 97, 40, .18) !important;
+}
+.crud-modern :is(.btn-secundario, .btn-volver-admin, .btn-secundario-admin, .volver, .btn-light) {
+  color: #344039 !important;
+  background: #fff !important;
+  border: 1px solid var(--crud-border) !important;
+}
+.crud-modern :is(.btn-danger, .eliminar) { background: #fff2f2 !important; color: var(--crud-danger) !important; border-color: #f0cccc !important; }
+
+/* Tablas */
+.crud-modern :is(.table-responsive, .tabla-contenedor) {
+  overflow: auto;
+  border: 1px solid var(--crud-border);
+  border-radius: 10px;
+}
+.crud-modern table { margin-bottom: 0; color: var(--crud-text); }
+.crud-modern table thead th {
+  padding: 14px 16px;
+  color: #46514a;
+  background: #f2f6f3 !important;
+  border-bottom: 1px solid var(--crud-border) !important;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.crud-modern table tbody td { padding: 14px 16px; border-color: #edf0ee; vertical-align: middle; }
+.crud-modern table tbody tr { transition: background .16s ease; }
+.crud-modern table tbody tr:hover { background: #f7faf8; }
+
+.crud-modern :is(.badge, .estado, .chip) { border-radius: 999px; font-weight: 600; }
+.crud-modern .alert { border: 1px solid transparent; border-radius: 10px; }
+.crud-modern .modal-content { border: 0; border-radius: 14px; box-shadow: 0 24px 60px rgba(16, 43, 27, .2); }
+
+@media (max-width: 767.98px) {
+  .crud-modern :is(.hero-modulo-admin, .hero-admin, .hero-cliente, .hero-empleado, .hero-vet) { padding: 25px 0 66px; }
+  .crud-modern :is(.contenido-principal, .contenido-modulo-admin) { margin-top: -38px; }
+  .crud-modern :is(.card-body, .cuerpo-tarjeta, .formulario-contenido) { padding: 17px; }
+  .crud-modern table thead th, .crud-modern table tbody td { padding: 12px; }
+}

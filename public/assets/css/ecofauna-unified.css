@@ -1,0 +1,70 @@
+/* Identidad visual compartida con la portada del cliente. */
+:root{--eco-deep:#062d19;--eco-deep-2:#0e4727;--eco-lime:#73b52a;--eco-lime-dark:#57941e;--eco-soft:#eef6e8;--eco-paper:#f7f9f5;--eco-white:#fff;--eco-ink:#142219;--eco-muted:#69736c;--eco-line:#e1e7e1;--eco-danger:#b23c3c;--eco-shadow:0 8px 25px rgba(14,54,28,.08)}
+body.ecofauna-unified{min-height:100vh;margin:0;color:var(--eco-ink);background:linear-gradient(135deg,#fafbf8 0%,var(--eco-paper) 65%,#f0f5ed 100%);font-family:"Poppins",system-ui,sans-serif}
+body.ecofauna-unified a{text-decoration:none}
+
+/* Navegación de todos los roles */
+.ecofauna-unified :is(.navbar,.navbar-admin,.navbar-admin-modulo,.navbar-cliente,.navbar-empleado,.navbar-vet,.barra-superior,.topbar){min-height:76px;padding:8px 0;border:0!important;border-bottom:1px solid rgba(255,255,255,.12)!important;background:linear-gradient(105deg,var(--eco-deep),#0b3b21)!important;color:#fff!important;box-shadow:0 5px 18px rgba(0,0,0,.15)}
+.ecofauna-unified :is(.navbar-brand,.marca-admin-modulo,.marca,.logo-texto){color:#fff!important}
+.ecofauna-unified :is(.navbar-brand,.marca-admin-modulo) small{color:rgba(255,255,255,.62)!important}
+.ecofauna-unified :is(.logo-navbar-admin,.logo-navbar-cliente,.logo-navbar-empleado,.marca-admin-modulo img){width:58px!important;height:58px!important;object-fit:contain}
+.ecofauna-unified :is(.usuario-info,.usuario-nav,.navbar-usuario){color:#fff!important}
+.ecofauna-unified :is(.usuario-info,.navbar-usuario) small{color:rgba(255,255,255,.65)!important}
+.ecofauna-unified :is(.usuario-avatar,.avatar-usuario){color:#fff!important;background:rgba(115,181,42,.3)!important;border:1px solid rgba(255,255,255,.18)!important}
+.ecofauna-unified :is(.btn-salir,.btn-logout){color:#fff!important;background:transparent!important;border:1px solid rgba(255,255,255,.35)!important;border-radius:8px!important}
+.ecofauna-unified :is(.btn-salir,.btn-logout):hover{background:#fff!important;color:var(--eco-deep)!important}
+
+/* Encabezados interiores */
+.ecofauna-unified :is(.hero-admin,.hero-modulo-admin,.hero-cliente,.hero-empleado,.hero-vet,.hero-habitats,.encabezado-principal){position:relative;overflow:hidden;padding:40px 0 82px!important;color:#fff!important;background:linear-gradient(100deg,rgba(5,43,23,.97),rgba(15,72,37,.92)),url("../animales/pexels-regan-dsouza-1315522347-37069075.jpg") center 44%/cover!important}
+.ecofauna-unified :is(.hero-admin,.hero-modulo-admin,.hero-cliente,.hero-empleado,.hero-vet,.hero-habitats)::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,30,15,.42),transparent 70%);pointer-events:none}
+.ecofauna-unified :is(.hero-contenido,.hero-admin>.container,.hero-modulo-admin>.container,.hero-empleado>.container,.hero-vet>.container){position:relative;z-index:1}
+.ecofauna-unified :is(.hero-admin,.hero-modulo-admin,.hero-cliente,.hero-empleado,.hero-vet,.hero-habitats) :is(h1,h2){color:#fff!important;font-family:"Poppins",sans-serif!important;font-weight:800!important;letter-spacing:-.025em}
+.ecofauna-unified :is(.hero-admin,.hero-modulo-admin,.hero-cliente,.hero-empleado,.hero-vet,.hero-habitats) p{color:rgba(255,255,255,.8)!important}
+.ecofauna-unified :is(.hero-etiqueta,.etiqueta-modulo,.hero-etiqueta-admin){color:#dff5c7!important;background:rgba(115,181,42,.18)!important;border:1px solid rgba(182,226,131,.28)!important;border-radius:999px!important}
+.ecofauna-unified :is(.hero-ilustracion,.hero-imagen){opacity:.16}
+.ecofauna-unified :is(.contenido-principal,.contenido-modulo-admin){position:relative;z-index:3;margin-top:-48px!important}
+
+/* Contenedores y tarjetas */
+.ecofauna-unified :is(.card,.tarjeta,.tarjeta-servicio,.tarjeta-modulo-admin,.panel,.filtro,.carrito-card,.form-editar,.seccion-servicios,.seccion-informacion,.detalle-card,.perfil-card){border:1px solid var(--eco-line)!important;border-radius:11px!important;background:#fff!important;box-shadow:var(--eco-shadow)!important}
+.ecofauna-unified :is(.card-header,.encabezado-tarjeta-modulo,.tarjeta-header,.panel-heading){padding:18px 21px!important;color:var(--eco-ink)!important;background:#fff!important;border-bottom:1px solid var(--eco-line)!important;border-radius:11px 11px 0 0!important}
+.ecofauna-unified :is(.card-body,.cuerpo-tarjeta){padding:22px}
+.ecofauna-unified :is(.tarjeta-resumen,.resumen-admin-grid article,.resumen-grid article,.stat-card){border:1px solid var(--eco-line)!important;border-radius:11px!important;background:#fff!important;box-shadow:var(--eco-shadow)!important}
+.ecofauna-unified :is(.resumen-icono,.servicio-icono,.icono-resumen,.stat-icon){color:#fff!important;background:linear-gradient(135deg,#82c634,var(--eco-lime-dark))!important;border-radius:50%!important}
+.ecofauna-unified :is(h1,h2,h3,h4,.titulo-form){color:var(--eco-ink)}
+.ecofauna-unified :is(.subtitulo-seccion,.mini-titulo,.eyebrow){color:var(--eco-lime-dark)!important}
+
+/* Formularios */
+.ecofauna-unified :is(label,.form-label){color:#344038;font-weight:600}
+.ecofauna-unified :is(.form-control,.form-select,input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),select,textarea){min-height:45px;border:1px solid var(--eco-line)!important;border-radius:8px!important;background:#fff;color:var(--eco-ink);box-shadow:none!important}
+.ecofauna-unified textarea{min-height:110px}
+.ecofauna-unified :is(.form-control,.form-select,input,select,textarea):focus{border-color:#78ae50!important;outline:0;box-shadow:0 0 0 3px rgba(115,181,42,.14)!important}
+.ecofauna-unified .form-check-input:checked{background-color:var(--eco-lime-dark);border-color:var(--eco-lime-dark)}
+.ecofauna-unified :is(.input-group-text,.form-addon){background:var(--eco-soft);border-color:var(--eco-line);color:var(--eco-deep)}
+
+/* Botones y enlaces de acción */
+.ecofauna-unified :is(.btn,.boton,.btn-servicio){border-radius:8px!important;font-weight:700;transition:transform .18s,box-shadow .18s,background .18s}
+.ecofauna-unified :is(.btn-primary,.btn-success,.btn-principal,.btn-guardar-admin,.guardar,.btn-servicio,.boton-principal){color:#fff!important;background:linear-gradient(135deg,var(--eco-lime),var(--eco-lime-dark))!important;border-color:var(--eco-lime-dark)!important}
+.ecofauna-unified :is(.btn-primary,.btn-success,.btn-principal,.btn-guardar-admin,.guardar,.btn-servicio,.boton-principal):hover{transform:translateY(-1px);background:var(--eco-lime-dark)!important;box-shadow:0 7px 16px rgba(73,130,26,.2)!important}
+.ecofauna-unified :is(.btn-secondary,.btn-light,.btn-secundario,.btn-volver-admin,.btn-secundario-admin,.volver,.btn-cancelar-admin){color:#344038!important;background:#fff!important;border:1px solid var(--eco-line)!important}
+.ecofauna-unified :is(.btn-danger,.eliminar){color:var(--eco-danger)!important;background:#fff2f2!important;border-color:#efcccc!important}
+.ecofauna-unified :is(.page-link,.pagination a){color:var(--eco-deep);border-color:var(--eco-line)}
+.ecofauna-unified :is(.page-item.active .page-link,.pagination .active){color:#fff;background:var(--eco-lime-dark);border-color:var(--eco-lime-dark)}
+
+/* Tablas */
+.ecofauna-unified :is(.table-responsive,.tabla-contenedor){overflow:auto;border:1px solid var(--eco-line);border-radius:10px;background:#fff}
+.ecofauna-unified table{margin-bottom:0!important;color:var(--eco-ink)!important}
+.ecofauna-unified table thead th{padding:13px 15px!important;color:#415047!important;background:#eef4ec!important;border-bottom:1px solid var(--eco-line)!important;font-size:.73rem!important;font-weight:800!important;letter-spacing:.035em;text-transform:uppercase;white-space:nowrap}
+.ecofauna-unified table tbody td{padding:13px 15px!important;border-color:#edf1ed!important;vertical-align:middle}
+.ecofauna-unified table tbody tr:hover{background:#f7faf5!important}
+.ecofauna-unified :is(.badge,.estado,.chip,.etiqueta-estado){border-radius:999px!important;font-weight:700!important}
+
+/* Tienda, imágenes y mensajes */
+.ecofauna-unified :is(.product-card,.producto-card){overflow:hidden;border:1px solid var(--eco-line)!important;border-radius:11px!important;background:#fff;box-shadow:var(--eco-shadow)!important}
+.ecofauna-unified :is(.product-card,.producto-card):hover{transform:translateY(-4px)!important;box-shadow:0 14px 28px rgba(14,54,28,.12)!important}
+.ecofauna-unified :is(.product-image,.producto-imagen,.imagen-editar){border-radius:8px!important}
+.ecofauna-unified :is(.precio,.precio-producto){color:var(--eco-lime-dark)!important}
+.ecofauna-unified :is(.alert,.aviso-cuenta,.mensaje){border-radius:9px!important;box-shadow:none!important}
+.ecofauna-unified .modal-content{border:0!important;border-radius:12px!important;box-shadow:0 25px 65px rgba(5,42,21,.24)!important}
+.ecofauna-unified :is(.footer-cliente,.footer-admin,.footer-empleado,footer){color:#fff!important;background:var(--eco-deep)!important}
+
+@media(max-width:767.98px){.ecofauna-unified :is(.navbar,.navbar-admin,.navbar-admin-modulo,.navbar-cliente,.navbar-empleado,.navbar-vet){min-height:68px}.ecofauna-unified :is(.hero-admin,.hero-modulo-admin,.hero-cliente,.hero-empleado,.hero-vet,.hero-habitats){padding:30px 0 68px!important}.ecofauna-unified :is(.contenido-principal,.contenido-modulo-admin){margin-top:-38px!important}.ecofauna-unified :is(.card-body,.cuerpo-tarjeta){padding:17px}.ecofauna-unified table thead th,.ecofauna-unified table tbody td{padding:11px!important}}

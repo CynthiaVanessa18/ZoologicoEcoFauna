@@ -1,0 +1,86 @@
+[
+    {
+        "id": 5,
+        "nombre": "Aviario Jardín",
+        "zona": "Jardín Oeste",
+        "clima": "Templado",
+        "descripcion": "Jardín protegido con árboles, flores y zonas de vuelo que permiten apreciar aves de distintos colores y tamaños.",
+        "animales_destacados": "Loros, guacamayas y aves pequeñas",
+        "horario_recomendado": "8:30 a. m. a 11:30 a. m.",
+        "estado": "Activo",
+        "icono": "bi-feather",
+        "actualizado_en": "2026-08-10T00:00:00+00:00"
+    },
+    {
+        "id": 4,
+        "nombre": "Bosque Nuboso",
+        "zona": "Sendero Alto",
+        "clima": "Fresco y húmedo",
+        "descripcion": "Recorrido fresco con neblina ligera, vegetación de altura y espacios de observación silenciosa.",
+        "animales_destacados": "Tucanes, quetzales y pequeños mamíferos",
+        "horario_recomendado": "8:00 a. m. a 10:00 a. m.",
+        "estado": "Activo",
+        "icono": "bi-cloud-fog2-fill",
+        "actualizado_en": "2026-08-10T00:00:00+00:00"
+    },
+    {
+        "id": 1,
+        "nombre": "Bosque Tropical",
+        "zona": "Sendero Norte",
+        "clima": "Cálido y húmedo",
+        "descripcion": "Un espacio con vegetación abundante, sombra natural y ambientes que reproducen las condiciones de los bosques tropicales.",
+        "animales_destacados": "Monos, perezosos y felinos tropicales",
+        "horario_recomendado": "8:00 a. m. a 11:00 a. m.",
+        "estado": "Activo",
+        "icono": "bi-tree-fill",
+        "actualizado_en": "2026-08-10T00:00:00+00:00"
+    },
+    {
+        "id": 3,
+        "nombre": "Humedal",
+        "zona": "Laguna Este",
+        "clima": "Húmedo",
+        "descripcion": "Laguna rodeada de plantas acuáticas y senderos elevados para observar animales sin alterar su entorno.",
+        "animales_destacados": "Flamencos, tortugas y aves acuáticas",
+        "horario_recomendado": "7:30 a. m. a 10:30 a. m.",
+        "estado": "Activo",
+        "icono": "bi-water",
+        "actualizado_en": "2026-08-10T00:00:00+00:00"
+    },
+    {
+        "id": 2,
+        "nombre": "Sabana Africana",
+        "zona": "Planicie Central",
+        "clima": "Cálido y seco",
+        "descripcion": "Área abierta con pastizales, zonas de descanso y puntos de observación diseñados para especies de grandes espacios.",
+        "animales_destacados": "Jirafas, cebras y antílopes",
+        "horario_recomendado": "9:00 a. m. a 12:00 m. d.",
+        "estado": "Activo",
+        "icono": "bi-sun-fill",
+        "actualizado_en": "2026-08-10T00:00:00+00:00"
+    },
+    {
+        "id": 6,
+        "nombre": "Terrario",
+        "zona": "Pabellón Sur",
+        "clima": "Controlado",
+        "descripcion": "Pabellón con ambientes de temperatura controlada y refugios adaptados para reptiles y anfibios.",
+        "animales_destacados": "Serpientes, iguanas y ranas",
+        "horario_recomendado": "10:00 a. m. a 2:00 p. m.",
+        "estado": "Inactivo",
+        "icono": "bi-globe-americas",
+        "actualizado_en": "2026-08-10T00:00:00+00:00"
+    },
+    {
+        "id": 7,
+        "nombre": "prueba",
+        "zona": "peue",
+        "clima": "cdsks",
+        "descripcion": "djskdksjkd",
+        "animales_destacados": "monos, perezoso",
+        "horario_recomendado": "8 a 9",
+        "estado": "Activo",
+        "icono": "bi-cloud-fog2-fill",
+        "actualizado_en": "2026-08-11T02:40:24+02:00"
+    }
+]
