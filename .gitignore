@@ -11,8 +11,7 @@
 /storage/sesiones/*
 !/storage/sesiones/.gitkeep
 /docs/manuales/Manual_de_usuario_EcoFauna.docx
-/docs/manuales/Manual_de_usuario_EcoFauna_actualizado.docx
-/docs/manuales/Manual_de_usuario_EcoFauna_actualizado.pdf
+~$*.docx
 .DS_Store
 Thumbs.db
 .idea/

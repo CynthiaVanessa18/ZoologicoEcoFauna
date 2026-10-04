@@ -45,6 +45,10 @@ El código permite explorar módulos PHP, un modelo de datos relacional, sesione
 
 ![Diagrama de relaciones del proyecto](docs/diagramas/DER%20Proyecto%20EcoFauna.png)
 
+## Manual de usuario
+
+Consulta el [manual actualizado en PDF](docs/manuales/Manual_de_usuario_EcoFauna_actualizado.pdf) o descarga la [versión editable en Word](docs/manuales/Manual_de_usuario_EcoFauna_actualizado.docx).
+
 ## Requisitos
 
 - PHP 8.0 o superior, con `mysqli` (mysqlnd), `openssl` y `mbstring`.
