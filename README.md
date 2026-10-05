@@ -10,7 +10,7 @@ Aplicación web de demostración para gestionar animales, hábitats, cuidados ve
 
 **PHP · MySQL/MariaDB · JavaScript · Bootstrap · Composer**
 
-[Funcionalidades](#funcionalidades) · [Modelo de datos](#modelo-de-datos) · [Instalación local](#instalación-local) · [Accesos de demostración](#accesos-de-demostración)
+[Pantallas de la aplicación](#pantallas-de-la-aplicación) · [Funcionalidades](#funcionalidades) · [Modelo de datos](#modelo-de-datos) · [Instalación local](#instalación-local) · [Accesos de demostración](#accesos-de-demostración)
 
 ## El proyecto de un vistazo
 
@@ -21,14 +21,35 @@ Aplicación web de demostración para gestionar animales, hábitats, cuidados ve
 | Experiencia del cliente | Explorar el catálogo, comprar productos y adquirir entradas simuladas. |
 | Administración | Gestionar usuarios, permisos, inventario y bitácora con acceso por roles. |
 
-<p align="center">
-  <img src="public/assets/imagenes/habitat/a-path-through-a-tropical-forest-with-palm-trees-photo.jpg" alt="Bosque tropical, recurso visual de los hábitats de EcoFauna" width="460">
-  <img src="public/assets/img/zoo.jpg" alt="Flamencos en un entorno tropical, recurso visual de EcoFauna" width="230">
-</p>
-
-<p align="center"><em>Selección de recursos visuales incluidos en el proyecto.</em></p>
-
 El código permite explorar módulos PHP, un modelo de datos relacional, sesiones y permisos por rol, formularios y flujos de inventario, compras y entradas. Incluye cuentas de demostración e instrucciones para ejecutarlo localmente.
+
+## Pantallas de la aplicación
+
+Recorre el portal del cliente con estas vistas exportadas de la aplicación. Haz clic en cada imagen o enlace para abrir el PDF completo.
+
+### Inicio del cliente
+
+Bienvenida, resumen de entradas y visitas, hábitats destacados y accesos a los servicios del zoológico.
+
+[![Pantalla de inicio del cliente en EcoFauna](docs/pantallas/inicio.png)](docs/pantallas/inicio.pdf)
+
+[Ver pantalla de inicio en PDF](docs/pantallas/inicio.pdf)
+
+### Catálogo de animales
+
+Búsqueda por nombre, filtro por hábitat y fichas con fotografías, peso, altura e información de los animales.
+
+[![Catálogo de animales de EcoFauna](docs/pantallas/animales.png)](docs/pantallas/animales.pdf)
+
+[Ver catálogo de animales en PDF](docs/pantallas/animales.pdf)
+
+### Exploración de hábitats
+
+Búsqueda y filtro por zona, tarjetas con capacidad y animales asociados, y consulta del detalle de cada hábitat. El PDF incluye dos páginas.
+
+[![Buscador y catálogo de hábitats de EcoFauna](docs/pantallas/habitats.png)](docs/pantallas/habitats.pdf)
+
+[Ver hábitats en PDF](docs/pantallas/habitats.pdf)
 
 ## Funcionalidades
 
